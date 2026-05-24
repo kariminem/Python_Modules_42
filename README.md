@@ -17,7 +17,8 @@ The 42 Python Piscine/Data Science branch is designed to take students from basi
 | Module | Focus Area | Key Concepts Covered | Status |
 | :--- | :--- | :--- | :---: |
 | **Module 00** | Starting | Syntax, basic types, functions, standard libraries | 🟢 Done |
-| **Module 01** | Orientation | Object-Oriented Programming (OOP), classes, execution environments | 🟡 In Progress |
+| **Module 01** | Orientation | Object-Oriented Programming (OOP), classes, execution environments | 🟢 Done |
+| **Module 02** | Orientation | Object-Oriented Programming (OOP), classes, execution environments | 🟡 In Progress |
 ---
 
 ## 📂 Repository Structure
