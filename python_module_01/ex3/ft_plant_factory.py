@@ -6,20 +6,21 @@ class Plant:
         name: str,
         height: float,
         age: int,
-        growth_rate: float
+        growth_rate: float = 0.8
     ) -> None:
-        self.name = name
-        self.height = height
-        self.days = age
+        self.name: str = name
+        self.height: float = height
+        self.age: int = age
+        self.growth_rate: float = growth_rate
 
     def show(self) -> None:
-        print(f"Created: {self.name}: {self.height:.1f}cm, {self.days} days old")
+        print(f"{self.name}: {round(self.height, 1)}cm, {self.age} days old")
 
     def grow(self) -> None:
         self.height += self.growth_rate
 
-    def age(self) -> None:
-        self.days += 1
+    def age_one_day(self) -> None:
+        self.age += 1
 
 
 if __name__ == "__main__":
@@ -32,5 +33,5 @@ if __name__ == "__main__":
         Plant("Fern", 15.0, 120, 0.2)
         ]
     for plant in plants:
+        print("Created: ", end="")
         plant.show()
-
