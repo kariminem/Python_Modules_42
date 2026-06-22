@@ -43,8 +43,8 @@ class Plant:
 
     def show(self) -> None:
         self.stats.record_show()
-        age_str = "" if self._name == "Unknown plant" else f"{self._age} "
-        print(f"{self._name}: {self._height:.1f}cm, {age_str}days old")
+        age_str = "" if self._name == "Unknown plant" else f"{self._age}"
+        print(f"{self._name}: {self._height:.1f}cm, {age_str} days old")
 
     def grow(self) -> None:
         self.stats.record_grow()
@@ -106,6 +106,10 @@ class Seed(Flower):
     ) -> None:
         super().__init__(name, height, age, growth_rate, color)
         self.seed_count: int = seed_count
+
+    def age(self) -> None:
+        self.stats.record_age()
+        self._age += 20
 
     def show(self) -> None:
         Plant.show(self)
