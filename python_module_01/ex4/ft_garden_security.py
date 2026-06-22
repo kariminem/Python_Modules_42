@@ -24,7 +24,7 @@ class Plant:
         else:
             self._age = age
 
-        print(f"Plant created: {self._name}: {round(self._height)}cm,"
+        print(f"Plant created: {self._name}: {round(self._height)}cm, "
               f"{self._age} days old")
 
     def show(self) -> None:
@@ -33,7 +33,7 @@ class Plant:
     def grow(self) -> None:
         self._height = round(self._height + self._growth_rate, 1)
 
-    def age_one_day(self) -> None:
+    def age(self) -> None:
         self._age += 1
 
     def set_height(self, height: float) -> None:
